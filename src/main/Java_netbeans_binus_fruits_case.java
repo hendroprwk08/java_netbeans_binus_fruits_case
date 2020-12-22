@@ -16,7 +16,7 @@ public class Java_netbeans_binus_fruits_case {
             System.out.println("=========================================");
             System.out.println("  1. View Fruits ");
             System.out.println("  2. Insert Fruits");
-            System.out.println("  3. Remove Movie");
+            System.out.println("  3. Remove Fruits");
             System.out.println("  4. EXIT");
             System.out.println("=========================================");
             System.out.print(" Type [ 1, 2, 3 or 4 ]: " );
@@ -111,9 +111,9 @@ public class Java_netbeans_binus_fruits_case {
             int num = 1;
             for(int i = 0; i < f.size(); i++ ) {
                 System.out.println("No. "+ num++ ); 
-                System.out.println("No. "+ f.get( i ).getName()  ); 
-                System.out.println("No. "+ f.get( i ).getType() ); 
-                System.out.println("No. "+ f.get( i ).getPrice() );
+                System.out.println("Name. "+ f.get( i ).getName()  ); 
+                System.out.println("Type. "+ f.get( i ).getType() ); 
+                System.out.println("Price. "+ f.get( i ).getPrice() );
                 System.out.println();
             }
             System.out.print("Press enter to continue..");
@@ -127,7 +127,7 @@ public class Java_netbeans_binus_fruits_case {
         boolean correct;
         
         //view fruits
-        System.out.println("[ Type "+ ( f.size() + 1 ) +" to check out ]" );
+        System.out.println("[ Type "+ ( f.size() + 1 ) +" to exit ]" );
         System.out.print("=================================================");
         System.out.println();
         System.out.printf("| %-3s| %-6s| %-20s| %-10s|", 
